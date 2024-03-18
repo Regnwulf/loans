@@ -27,6 +27,11 @@ This is a RESTful API built with Django and Django REST Framework to manage loan
 - `PUT /api/payments/{id}/`: Updates a specific payment.
 - `DELETE /api/payments/{id}/`: Deletes a specific payment.
 
+### Payments
+
+- `GET /api/outstanding_balance/`: Lists the total outstanding balance.
+- `GET /api/outstanding_balance/<str:identifier>/`: Lists the outstanding of a specific loan.
+
 ### Authentication
 
 - `POST /api/token/`: Obtains an authentication token for the user.
